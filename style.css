@@ -74,6 +74,55 @@ h1 {
     width: fit-content;
 }
 
+/* Container styling */
+.containr {
+    width: 320px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image container styling */
+.containr-image {
+    width: 100%;
+    height: 250px;
+}
+
+.containr-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 12px; /* Ensures the image follows container's rounded corners */
+}
+
+/* Hover effect on the image */
+.containr-image img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.1);
+}
+
+/* Optional: Add a footer inside containr if needed */
+.containr-footer {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
 /* Background animation keyframes */
 @keyframes bgAnimatedGradient {
     0% {
