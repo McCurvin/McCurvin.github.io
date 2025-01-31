@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     background: #1B1B1B;
     color: #F4F4FF;
@@ -65,7 +68,9 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #F9DA88;
 }
-/* All about myself!! */
+
+
+/* All about myself!!*/
 
 #about {
     padding: 80px 0;
@@ -182,6 +187,7 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top: 50px;
 }
+
 .work {
     border-radius: 10px;
     position: relative;
@@ -194,6 +200,14 @@ nav ul li a:hover::after{
     justify-content: center;
     transition: transform 0.5s;
 }
+
+/* .hidden-works {
+    display: none;
+}
+
+.hidden-works.visible {
+    display: grid;
+} */
 .layer {
     width: 100%;
     height: 0;
@@ -243,9 +257,9 @@ nav ul li a:hover::after{
     padding: 17px 40px;
     border-radius: 20px;
     cursor: pointer;
-    color: #E29354;
-    border: 2px solid #E29354;
-    background-color: #F4F4FF;
+    color: #F4F4FF;
+    border: 2px solid #F4F4FF;;
+    background-color: #E29354;
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     letter-spacing: 1.5px;
     font-size: 15px;
@@ -253,9 +267,9 @@ nav ul li a:hover::after{
 }
 .btn:hover {
     letter-spacing: 3px;
-    background-color: hsl(32, 80%, 48%);
+    background-color: hsl(30, 88%, 44%);
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(185, 40, 29) 0px 7px 29px 0px;
+    box-shadow: rgb(198, 36, 24) 0px 7px 29px 0px;
 }
 
 .btn:active {
@@ -266,6 +280,12 @@ nav ul li a:hover::after{
     transform: translateY(10px);
     transition: 100ms;
 }
+
+/* Certifcate area */
+
+
+
+
 /* Contact me, kings and queens */
 .contact-left {
     flex-basis: 35%;
@@ -297,4 +317,107 @@ nav ul li a:hover::after{
 .social-icons a:hover {
     color: #E29354;
     transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+
+}
+
+.contact-right form{
+    width: 100%;
+    
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #222222;
+    padding: 15px;
+    margin: 15px 0;
+    color: #F4F4FF;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+form btn2 {
+    padding: 14px 60px;
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.copyright {
+    width:100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #222222;
+    color: #595973;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.copyright i {
+    color:#E29354;
+}
+
+
+/* Responsiveness (I hope) */
+nav .fas{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 200px;
+        height: 100vh;
+        background: #E29354;
+        transition: right 0.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+    
+    nav ul.active {
+        right: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-text {
+        margin-top: 50%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .header-text h1 {
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .services-list,
+    .work-list {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    form input, form textarea {
+        width: 90%;
+    }
 }
