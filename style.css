@@ -11,7 +11,7 @@ body{
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    background-image: url(Pictures/background.png);
     background-size: cover;
     background-position: center;
 }
@@ -189,7 +189,112 @@ nav ul li a:hover::after{
 }
 .work img {
     width: 100%;
-    border-radius: 20;
+    border-radius: 20px;
     display: block;
     justify-content: center;
+    transition: transform 0.5s;
+}
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #E29354);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a {
+    margin-top: 20px;
+    color: #E29354;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #F4F4FF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+
+    padding: 17px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #E29354;
+    border: 2px solid #E29354;
+    background-color: #F4F4FF;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+.btn:hover {
+    letter-spacing: 3px;
+    background-color: hsl(32, 80%, 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(185, 40, 29) 0px 7px 29px 0px;
+}
+
+.btn:active {
+    letter-spacing: 3px;
+    background-color: hsl(31, 82%, 45%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(136, 17, 17) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+/* Contact me, kings and queens */
+.contact-left {
+    flex-basis: 35%;
+}
+.contact-right {
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i {
+    color:#E29354 ;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #F4F4FF;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #E29354;
+    transform: translateY(-5px);
 }
