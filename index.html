@@ -3,31 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>mcRoyeras Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/72cd9ed0be.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="bg-container">
-        <h1>I am McCurvin Royeras!</h1>
-
-        <div class="card">
-            <div class="card-image">
-                <a href="/RoyerasExplorePHTours.html" target="_blank">
-                    <img src="Images/LandingPage.png" alt="Royeras Explore PH Tours Image"> 
-                </a>
-                
-            </div>
-        </div>
-        <div class = "containr">
-            <div class = "containr-image">
-                <a href = "/RoyerasCourseSchedule.html" target="_blank">
-                    <img src="images-schedule/SchedSS.png" alt="Royeras 2T 24-25AY Schedule">
-                </a>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/name.png" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Visual Designer</p>
+                <h1>Hi, I'm <span>McCurvin</span> Royeras<br>from the Philippines!</h1>
             </div>
         </div>
     </div>
+    <!--About me Section Lots of Love <3-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="sample-user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>The name's Mc Curvin, and I'm ready to be of service! I am currently a sophomore at Mapúa Malayan Colleges Mindanao, majoring in Bachelor of Science in Computer Science. I am involved in several student organizations including Google Developer Student Clubs Mapúa-MCM, Supreme Student Council MMCM, and TedEx Lanang Ave. Hence, I have developed a diverse and extensive skill set that could be utilized for your company's advantages. </p>
+                        
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Visual Designing</span><br>Graphic Illustration & Designing</li>
+                            <li><span>UI/UX</span><br>Web App/App Interface Designing</li>
+                            <li><span>Social Media Marketing</span><br>Advertisement & Promotion</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 - Current</span><br>Part-Time Social Media Marketing | Tom & Toms Coffee Davao</li>
+                            <li><span>2024 - Current</span><br>Secretary General | Supreme Student Council</li>
+                            <li><span>2023 - Current</span><br>Creatives Co-Lead | DICE - Davao Interschool Computer Enthusiasts</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2027</span><br>MMCM | Bachelor of Science in Computer Science</li>
+                            <li><span>2021 - 2023</span><br>MMCM SHS | ICT Track - Specializing in Programming<br>(With Highest Honors)</li>
+                            <li><span>2023</span><br>Microsoft Office Specialist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services section -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Visual Design</h2>
+                    <p>I help brands, businesses, and individuals craft unique identities and visual aesthetics. From graphic design and illustration to creative direction, I'm here to bring your vision to life!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Looking to elevate your marketing? Let me design a website that captures your brand and engages your audience!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-heart"></i>
+                    <h2>Marketing</h2>
+                    <p>TikTok, Instagram, Facebook, and more—keeping up with the fast-paced digital world can be challenging, but I can help you with that!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- portfolio section -->
+
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/wurk-1.png" alt="Mc.Linen">
+                    <div class="layer">
+                        <h3>Graphic Designing</h3>
+                        <p>I have made a graphic design for a local shirt brand that helped them promote all of their products across social media platforms.</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/wurk-2.png" alt="Mc.Linen">
+                    <div class="layer">
+                        <h3>UI/UX</h3>
+                        <p>Aidvocate, a donation website that connects people of any organizations with trusted charities. This allows NGOs and initiatives to get the exposure they need.</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/wurk-3.png" alt="Mc.Linen">
+                    <div class="layer">
+                        <h3>UI/UX Designing</h3>
+                        <p>I have designed </p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/wurk-4.png" alt="Mc.Linen">
+                    <div class="layer">
+                        <h3>Graphic Illustration</h3>
+                        <p>I draw, create, and make your imaginations come true!</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/wurk-5.png" alt="Mc.Linen">
+                    <div class="layer">
+                        <h3>Graphic Designing</h3>
+                        <p>I have made a graphic design for a local shirt brand that helped them promote all of their products across social media platforms.</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
     
+            </div>
+        </div>
+     </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>  
 </body>
-</html>`
-
-
+</html>
