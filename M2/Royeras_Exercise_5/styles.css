@@ -1,0 +1,85 @@
+/* Import dreamy Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Parisienne&display=swap');
+
+body {
+    background: linear-gradient(to bottom, #ffe4ec, #ffccff); 
+    background-image: url(Images/butterfly.png); /* Replace with your butterfly image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Parisienne', cursive;
+    color: #ff69b4;
+    text-shadow: 2px 2px 10px rgba(255, 20, 147, 0.5);
+}
+
+#quoteDisplay {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 182, 193, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+
+#quote {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgb(230, 172, 201);
+}
+
+
+#author {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffdfe4;
+}
+
+
+#newQuoteBtn {
+    background: #ff85a2;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+#newQuoteBtn:hover {
+    background: #ff4081;
+    transform: scale(1.1);
+}
+
+
+@keyframes fly {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.butterfly {
+    position: absolute;
+    width: 50px;
+    animation: fly 3s infinite ease-in-out;
+}
+
+
+.butterfly:nth-child(1) { top: 10%; left: 20%; animation-duration: 4s; }
+.butterfly:nth-child(2) { top: 30%; left: 70%; animation-duration: 5s; }
+.butterfly:nth-child(3) { top: 60%; left: 40%; animation-duration: 6s; }
+.butterfly:nth-child(4) { top: 80%; left: 10%; animation-duration: 3s; }
